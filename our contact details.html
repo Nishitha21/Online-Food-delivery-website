@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>contact details</title>
+<style type="text/css">
+body{
+background-image:url("contact.jpg");
+background-repeat:no-repeat;
+background-size:100%;
+}
+h1{
+color:orange;
+font-family:cursive,serif;
+}
+#contact{
+position:relative;
+}
+#contact-box{
+display:flex;
+justify-content:center;
+align-items:center;
+padding-bottom:34px;
+}
+#contact-box input,
+#contact-box textarea{
+width:100%;
+padding:0.5rem;
+border-radius:9px;
+font-size:1.1rem;
+}
+#contact-box form{
+width:40%;
+}
+#contact-box label{
+font-size:1.3rem;
+font-family:cursive,serif;
+}
+a{
+margin-left:0%;
+font-size:15px;
+color:white;
+background-color:black;
+padding:10px;
+border-radius:20px;
+}
+a:hover{
+padding:15px;
+color:lightblue;
+
+}
+
+
+
+</style>
+</head>
+<body>
+<h1><center> Contact Us</center></h1>
+<a onclick="window.location.href='Web page of css and html.html'">home</a>
+<section id="contact">
+<div id="contact-box">
+<form action="">
+<div class="form-group">
+<label for="name" style="color:white">Name:</label>
+<input type="text" name="name" id="name" placeholder="Enter your name">
+</div>
+<div class="form-group">
+<label for="email" style="color:white">Email:</label>
+<input type="email" name="name" id="email" placeholder="Enter your email">
+</div>
+<div class="form-group">
+<label for="phone" style="color:white">Phone number:</label>
+<input type="phone" name="name" id="phone" placeholder="Enter your phone">
+</div>
+<div class="form-group">
+<label for="message" style="color:white">Message:</label>
+<textarea name="message" id="message" cols="10" rows="5"></textarea>
+</div>
+</form>
+</div>
+</section>
+<center><label for onclick="submit" style="color:white"></label></center>
+<center><input type="submit" name="name" id="submit"></center>
+<h1><center>Thank You ! For placing your Order</center></h1>
+
+<script>
+      function FOODONLINEDELIVERY(){
+var Name=
+      document.forms.RegForm.Name.value;
+var Email=
+      document.forms.RegForm.Email.value;
+var Phone number=
+      document.forms.RegForm.Phone number.value;
+var regEmail=/^w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+var regPhone number=/^\d{10}$/;
+var regName=/^\d+$/g;
+if(Name=="" || regName.test(name)){
+window.alert("Please enter your name properly");
+Name.focus();
+return false;
+}
+if(Email=="" || !regEmail.test(email)){
+window.alert("Please enter a valid e-mail id");
+Email.focus();
+return false;
+}
+if(Phone number=="" || !regPhone number.test(Phone number)){
+alert("Please enter valid phone number");
+Phone number.focus();
+return false;
+}
+return true;
+}
+</script>
+
+</body>
+</html>
